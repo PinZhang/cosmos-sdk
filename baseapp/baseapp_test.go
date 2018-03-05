@@ -48,6 +48,7 @@ func TestMountStores(t *testing.T) {
 	err = app.LoadLatestVersion(capKey2)
 	assert.Nil(t, err)
 }
+
 // Test that we can make commits and then reload old versions.
 // Test that LoadLatestVersion actually does.
 func TestLoadVersion(t *testing.T) {

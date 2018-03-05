@@ -48,6 +48,8 @@ type BaseApp struct {
 	ctxCheck   sdk.Context         // CheckTx context
 	ctxDeliver sdk.Context         // DeliverTx context
 	valUpdates []abci.Validator    // cached validator changes from DeliverTx
+
+	AccountMapper sdk.Account
 }
 
 var _ abci.Application = &BaseApp{}
